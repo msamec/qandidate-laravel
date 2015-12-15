@@ -1,0 +1,47 @@
+{
+    "name": "msamec/qandidate-laravel",
+    "description": "Service provider for qandidate-laravel",
+    "keywords": [
+        "msamec",
+        "qandidate-laravel"
+    ],
+    "homepage": "https://github.com/msamec/qandidate-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marko Šamec",
+            "email": "marko.samec@am2studio.hr",
+            "homepage": "https://github.com/msamec",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.1",
+        "php" : ">=5.3.0",
+        "qandidate/toggle": "0.3.0",
+        "symfony/expression-language": "3.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Msamec\\QandidateLaravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Msamec\\QandidateLaravel\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
